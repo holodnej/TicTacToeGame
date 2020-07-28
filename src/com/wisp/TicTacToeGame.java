@@ -6,19 +6,19 @@ package com.wisp;
 public class TicTacToeGame {
 
     public static void main(String[] args) {
-        System.out.println("Start");
+       // System.out.println("Start");
         TicTacToeGame ticTacToeGame = new TicTacToeGame();
         ticTacToeGame.fillTable(); //Объект класса
         ticTacToeGame.printTable(); //Объект класса
-        System.out.println("Finish");
+       // System.out.println("Finish");
     }
 
     char[][] field;
 
     public TicTacToeGame() {
-        System.out.println("Constructor");
+       // System.out.println("Constructor");
         field = new char[3][3];
-    } //Конструктор класса
+    }  //Конструктор класса
 
     @SuppressWarnings("ForLoopReplaceableByForEach") //Предупреждение системе чтобы среда не отвлекала
     private void printTable() {
@@ -33,7 +33,7 @@ public class TicTacToeGame {
     private void fillTable() {
         for (int row = 0; row < field.length; row++) {
             for (int col = 0; col < field[row].length; col++) {
-                field[row][col] = 'a';
+                field[row][col] = '.';
             }
         }
     }
